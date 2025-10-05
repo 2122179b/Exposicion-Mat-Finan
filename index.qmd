@@ -1,0 +1,385 @@
+---
+title: "Factoraje"
+author: "Diana Berenice Jeronimo Douglas"
+format: 
+  html:
+    toc: true
+  pdf:
+    toc: true
+editor: visual
+---
+
+## Universidad
+
+**Universidad:** Universidad Michoacana de San Nicolás de Hidalgo
+
+![](data:image/jpeg;base64,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){fig-align="center" width="291"}
+
+**Materia:** Matemáticas Financieras
+
+## Integrantes del equipo
+
+-   Aly Dalai Guerrero Padilla
+-   Diana Berenice Jerónimo Douglas
+-   Mary Jose Uribe Pimienta
+
+En esta página encontrarás todo lo que necesitas saber acerca del factoraje. En un enfoque hacia las matemáticas financieras.
+
+Archivo de la presentación en este [enlace](index(presentacion).html)
+
+# Introducción
+
+El factoraje es una herramienta que las empresas utilizan para obtener financiación, con el paso del tiempo se ha popularizado en un gran porcentaje, esto ha marcado un gran impacto en un nivel socio-económico. Durante estos últimos años el factoraje financiero ha enfrentado y con llevado de una manera eficiente su desarrollo y popularización con lo que su avance se volvió un tema fundamental a tratar.
+
+El factoraje no solo involucra la venta de facturas pendientes de cobro, sino que también aspectos de liquidez rápida y gestionamiento del flujo de efectivo.
+
+Lo que se pretende lograr en esta investigación es analizar y describir como influye el factoraje en la actualidad a las empresas, profundizando en como se lleva a cabo su cálculo financiero.
+
+#Antedentes Historicos del Factoraje
+
+## Origenes
+
+Sus origenes se remontan a la antigua Roma, donde los comerciantes usaban factores mercantiles para administrar las ventas de sus mercancías
+
+## Edad Media
+
+El uso de los factores mercantiles se expandió por europeas, ya que gracias a estos a traves de la exportación se empezó a promover la comercialización de los productos
+
+## E.U.A
+
+En el siglo XIX la población (en rápida expansión) los factores empezaron a ser muy relevante para exportaciones eurpeas, especialemenete en textiles, éstos se encargaban de almacenar bienes, encontrar compradores, entregar productos y cobrar.
+
+Con el paso del tiempo, se empezaron a ofrecer préstamos garantizados con la mercancía, hasta que, posteriormente, el papel del factor cambió,ya que, ya no almacenaban, ahora financiaban con base en cuentas por cobrar.
+
+# Europa:
+
+En el siglo XX se practicaba la cesión de facturas confidencialmente, hasta que hubo pérdidas por insolvencias y deducciones de compradores. Con el paso del tiempo y por influencia de del modelo estadounidense, se adoptó el factoraje moderno que consistía cesión de factoraje con o sin recurso, siempre con notificador al comprador.
+
+## Asia y el Pacífico:
+
+En la década de los 80s solo se usaban cartas de crédito, luego, con mayor globalización, creció el factoraje transfronterizo y más recientemente el domestico
+
+# Resto del mundo
+
+Por otro lado en la decada de los 70s el factoraje se expandió en Sudáfrica y en otros países. En el 2017 el comercio mundial alcanzó caso 20 billones de dolares, y factoraje generó más de 2.5 billones de euros. Impulsada por la expansión de Asia, el aumento del factoraje internacional y la transición de la banca tradicional hacia subsidiarias dedicadas al factoraje, dando paso al crecimiento global.
+
+# Antecedentes en México:
+
+## 80s:
+
+En 1982 tras la estatización bancaria, se creó la figura de empresas de factoraje,inicialmente controladas por bancos. No había legislación específica ni supervisión de la Secreataría de Hacienda.
+
+## 90s
+
+Reconocimiento formal en la Ley de Organizaciones y Actividades Auxiliares del Crédito, donde se agregó el capítulo "De las Empresas de Factoraje Financiero". Con esto, las empresas de factoraje pasaron a ser organizaciones auxiliares de crédito. En 1993 con el TLCAN se crearon las SOFOLES (Sociedades Financieras de Objeto Limitado), como intermediaros de propósito único, incluyendo factoraje.
+
+# 2006
+
+Reforma legal que dio origen a las SOFOMES (Sociedades Financieras de Objeto Múltiple), con facultades para ptprgar crédito, arrendamiento financiero y factoraje financiero.
+
+# Definición
+
+El Factoraje financiero es un mecanismo de financiamiento a corto plazo mediante el cual una empresa comercial, industrial, de servicios o persona física con actividad empresarial promueve su crecimiento mediante la venta de sus cuentas por cobrar vigentes a un organismo financiero especializado.
+
+## ¿Cómo fuciona?
+
+Una organización vende sus facturas de las cuentas por cobrar a una entidad financiera que paga por ellas. De esta manera, la entidad anticipa el dinero a la empresa, mientras este se encarga de gestionar posteriormente el cobro de los derechos de cobro adquiridos. De esta manera, la organización obtiene dinero de manera inmediata mientras un tercero se encarga de gestionar el cobro posteriormente.
+
+El factoraje, lejos de funcionar como un crédito, es una transacción comercial que permite a una empresa acceder a financiamiento, incrementar su liquidez y crecer sin asumir grandes riesgos.
+
+# Tipos de factoraje
+
+## Factoraje sin garantía o sin recurso
+
+El factoraje sin recurso implica la compraventa de facturas por el 100% del valor de las mismas menos un porcentaje o diferencia de precio sin requerir la firma de avales o garantías de ningún tipo la empresa de factorización asume totalmente el riesgo de incobrabilidad del deudor
+
+# Factoraje con garantía o con recurso
+
+El factoraje con garantía con recurso implica la compraventa de facturas, recibiendo el cliente un anticipo financiero por una parte del valor de dichas facturas. Las facturas que desarrollan esta modalidad de factoraje no asumen el riesgo de incobrabilidad del deudor y, por ello, solicitan al cliente la firma de un vale, de un aval o de una fianza como garantía del adelanto recibido. El factoraje con recursos se asemeja a lo que comúnmente se conoce como sesión de crédito en garantía.
+
+# Factoraje de exportación
+
+El factoraje de exportación corresponde a la compra de documentos de crédito que documentan ventas al exterior. Habitualmente la compañía que realiza el factoraje se asegura la cobrabilidad mediante un seguro de crédito con una compañía aseguradora o con otra compañía de factoraje del país del importador.
+
+# Factoraje de importación
+
+el factoraje de importación es el aseguramiento de créditos que exportadores de un país otorgaron a importadores de otro país. Es el complemento del factoraje de importación y suele incluir los servicios de gestión de cobranza y transferencia de los fondos al país del exterior.
+
+# Fundamentos Financieros del Factoraje
+
+## Relación con el valor del dinero en el tiempo.
+
+El factoraje permite convertir dinero futuro en dinero presente, lo cual es valioso ya que ese dinero puede ser reinvertido y utilizado para pagar obligaciones o aprovechar oportunidades inmediatas. La comisión que cobra la empresa de factoraje representa el costo del tiempo, es el precio que se paga por tener el dinero hoy en lugar de esperar. Este mecanismo refleja el principio de que el uso del dinero tiene un valor, y ese valor se mide en términos de interés o descuento.
+
+Esto se aplica en varias decisiones financieras como lo son las inversiones, los préstamos y el factoraje, que vende cuentas por cobrar anticipadamente refleja el valor del dinero en el tiempo.
+
+# Aplicación de fórmulas de descuento simple o compuesto
+
+Descuento simple en 60 días
+
+```{r}
+#| echo: false
+# Datos
+F <- 10000   # factura
+d <- 0.20    # tasa anual 20%
+T <- 60      # plazo
+B <- 360     # base de días
+
+# Fórmula de descuento simple
+N <- F * (1 - d * T/B)
+N
+```
+
+En python:
+
+```{python}
+#| echo: false
+# Datos
+F = 10000   # Factura
+d = 0.20    # Tasa anual (20%)
+T = 60      # Plazo en días
+B = 360     # Base de días
+
+# Fórmula de descuento simple
+N = F * (1 - d * T/B)
+
+print("Neto recibido (descuento simple):", round(N, 2))
+```
+
+Descuento compuesto en 60 días
+
+```{r}
+#| echo: false
+# Datos
+F <- 10000
+d <- 0.20
+T <- 60
+B <- 360
+
+# Fórmula de descuento compuesto
+N <- F * (1 + d)^(-T/B)
+N
+```
+
+En python:
+
+```{python}
+#| echo: false
+# Datos
+F = 10000   # Factura
+d = 0.20    # Tasa anual (20%)
+T = 60      # Plazo en días
+B = 360     # Base de días
+
+# Fórmula de descuento compuesto
+N = F * (1 + d) ** (-T/B)
+
+print("Neto recibido (descuento compuesto):", round(N, 2))
+```
+
+# Ahora aplicaremos el descuento simple neto en r
+
+```{r}
+#| echo: false
+# Datos base
+F <- 10000    # Factura
+d <- 0.20     # Tasa anual (20%)
+B <- 360      # Base comercial
+
+# Creamos un vector de plazos
+plazos <- c(30, 60, 90, 120)
+
+# Calculamos el neto con descuento simple para cada plazo
+N <- F * (1 - d * plazos/B)
+
+# Hacemos la gráfica
+plot(plazos, N, type="b", col="pink", pch=16,
+     main="Efectivo recibido según plazo",
+     xlab="Plazo (días)", ylab="Monto neto recibido ($)")
+```
+
+# Ventajas y Desventajas:
+
+Ventajas: \## 1. Proporciona liquidez y flujo de efectivo. Por medio del factoraje las empresas consiguen liquidez inmediata para la ejecución de sus operaciones, ya sea para pagar deudas, o invertir.
+
+## 2. Mejora el acceso al crédito.
+
+El factoraje permite a los negocios mejorar su calificación crediticia, ya que cumplir con los pagos a tiempo es una señal de buena salud financiera, permitiéndoles que eventualmente puedan solicitar un préstamo empresarial.
+
+## 3. Ahorro de tiempo y recursos.
+
+El factoraje puede reducir tiempo y los recursos necesarios para administrar y cobrar las cuentas por cobrar, ya que la entidad financiera especializada en factoring se encarga de la gestión y de las cuentas por cobrar. Y esa energía se puede redirigir a otras actividades de creación de negocios, como ventas marketing y desarrollo de clientes.
+
+## 4. No genera deuda.
+
+A diferencia de los préstamos tradicionales, el factoraje no implica la creación de una deuda. Las empresas solo pagan una comisión por el servicio.
+
+## 5. Posibilidad de enfrentar imprevistos.
+
+El factoraje permite a las empresas adaptarse a cambios inesperados en la demanda o en el mercado, proporcionando los recursos necesarios para responder rápidamente a nuevas oportunidades o desafíos.
+
+# Desventajas:
+
+## 1. Costo alto.
+
+Aunque el factoraje brinda acceso inmediato a efectivo, las empresas de factoraje suelen quedarse con entre el 1% y el 4% de una cuenta por cobrar por comisión. Además de esto, también cobran un interés sobre el anticipo de efectivo proporcionado. 2. Responsabilidad ante impago. En caso de impago, pueden existir penalizaciones que afecten a tu empresa o la relación con tu comprador.
+
+# Enfoque cuantitativo / financiero.
+
+```{r echo=FALSE}
+#tabla de flujo de efectivo
+flujo <- data.frame(
+  Mes = c("Enero", "Febrero", "Marzo"),
+  Sin_Factoraje = c(0, 0, 100000),
+  Con_Factoraje = c(80000, 0, 20000)
+)
+
+# Convertir los números a formato legible
+flujo$Sin_Factoraje <- format(flujo$Sin_Factoraje, big.mark = ",", scientific = FALSE)
+flujo$Con_Factoraje <- format(flujo$Con_Factoraje, big.mark = ",", scientific = FALSE)
+
+# Mostrar la tabla
+knitr::kable(flujo, caption = "Comparación de flujo de efectivo con y sin factoraje")
+```
+
+# Gráfico
+
+```{r echo=FALSE}
+# Cargar el paquete
+library(ggplot2)
+
+# Crear los datos
+flujo <- data.frame(
+  Mes = rep(c("Enero", "Febrero", "Marzo"), each = 2),
+  Tipo = rep(c("Sin Factoraje", "Con Factoraje"), times = 3),
+  Monto = c(0, 80000, 0, 0, 100000, 20000)
+)
+
+# Crear el gráfico
+ggplot(flujo, aes(x = Mes, y = Monto, fill = Tipo)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Comparación de flujo de efectivo con y sin factoraje",
+       y = "Monto ($)",
+       x = "Mes") +
+  scale_y_continuous(labels = scales::comma) +
+  theme_minimal()
+```
+
+# Casos reales y aplicaciones prácticas.
+
+En México son pocas las empresas que utilizan el factoraje, aunque ha tenido un aumento en los últimos años. Según la Encuesta Nacional de Financiamiento de las empresas solo el 2% de las empresas mexicanas utilizaron el factoraje financiero en 2020; sin embargo, el 97% de las empresas nunca han recurrido a esta herramienta debido, principalmente al desconocimiento.
+
+# Algunas de las empresas que otorgan factoraje son:
+
+## 1. HSBC
+
+HSBC tiene la capacidad para mejorar la liquidez, controlar las transacciones, y brindar asesoramiento para mejorar la compra pagos a los proveedores y financiamiento inmediato.
+
+## 2. Banco Interacciones.
+
+Esta banda comercial está estructurada para prestar servicio y acompañamientos a personas, empresas, entes gubernamentales, negocios agropecuarios, factoraje, financiamiento, etc.
+
+## 3. Banorte.
+
+Tiene una gran variedad de servicios y productos, en especial su servicios de Factoraje a proveedores, pensado en brindar apoyo para que fortalezcan su manejo en tesorería, financien cuentas por pagar y otorgar a proveedores liquidez a través del sistema electrónico.
+
+## 4. BBVA.
+
+Asiste los requerimientos de las empresas que desean mejorar su funcionamiento financiero.
+
+# Algunas empresas que usan facotraje son:
+
+## 1. CEMEX. (Construcción)
+
+Tiene una línea de factoraje con BBVA para apoyar a sus proveedores.
+
+## 2. Arteche: (Equipos eléctricos)
+
+Lanzó una línea de factoraje inverso sostenible con con BID Invest y eFactor para sus proveedores en México.
+
+## 3. Grupo Alfa. (Manufactura)
+
+Está indcrito en el programa de factoraje ofrecido por el Consejo Mexicano de Negocios y BID Invest.
+
+## 4. Mabe. (Electrodomésticos)
+
+Es una de las empresas registradas en CMN-BID Invest para dar acceso de factoraje inverso a sus proveedores.
+
+# Aplicaciones Actuariales y en Ciencia de Datos.
+
+El factoraje puede integrarse en modelos actuariales como en:
+
+Valor presente de facturas: Para poder estimar liquidez futura. Modelos de riesgo de impago: Utilizando regresión logística o árboles de decisión. Simulación de escenarios: ¿Qué pasa si el cliente no paga? ¿Cómo afecta eso al flujo de caja?
+
+## Oportunidades del factoraje en el futuro
+
+#### Digitalización del proceso:
+
+La automatización de facturas y documentos digitales radicen los costos y tiempos, actualmente permiten operaciones más rápidas, seguras y transparentes, las plataformas tecnologicas amplían el acceso, incluso para pequeñas empresas.
+
+#### Mayor inclusión financiera:
+
+El factoraje digital es una puerta de entrada al financiamiento para PYMES que normalmente no acceden al crédito bancario.
+
+# Gestión eficiente de riesgos:
+
+Con herramientas digitales, las entidades financieras tienen mejor control de la información y de la solvencia de los clientes lo cual abre las puertas de ofrecer tasas mas competitivas y personalizadas.
+
+# Agilidad y liquidez inmediata:
+
+Empresas pueden transformar facturas en efectivo con mayor rapidez, lo que fortalece su flujo de caja y su capacidad de respuesta a cambio en el mercado. ---
+
+# Cadenas productivas Nacional Financiera
+
+## Definición de cadenas productivas:
+
+Son programas de NAFIN que permite a los proveedores de grandes empresas o entidades gubernamentales obtener liquidez inmediata medinate el factoraje electrónico. Es decir, pueden anticipar el cobro se dud sunetas por cobrar antes de la fecha de vencimiento.
+
+# Funcionamiento:
+
+Las empresas compradoras se regisran en el sistema de Nafinet los docuemntos por pagar a sus proveedores. Despúes el proveedor accede a Nafinet y elige qué documento desea anticipar. El banco participante deposita el monto anticipado al proveedor el mismo día, descontando una tasa de interés. Al vencimiento, la empresa compradora paga al banco el monto total del documento.
+
+# Ejemplo numérico del Factoraje en Cadenas Productivas
+
+```{python}
+#| echo: false
+# Datos
+monto_factura = 100000  # Monto total de la factura en MXN 
+tasa_anual = 0.12       # Tasa de interés anual 12%
+dias_credito = 60       # Plazo en días
+
+# Cálculo del costo financiero
+plazo_en_anios = dias_credito / 360
+costo_financiero = monto_factura * tasa_anual * plazo_en_anios
+
+monto_anticipado = monto_factura - costo_financiero
+
+print(f"Monto de la factura: ${monto_factura:,.2f} MXN")
+print(f"Costo financiero por anticipar: ${costo_financiero:,.2f} MXN")
+print(f"Monto recibido por el proveedor: ${monto_anticipado:,.2f} MXN")
+
+```
+
+# Conclusión
+
+Logramos observar y analizar que el factoraje es una herramienta financiera fundametal que permite a las empresas obtener liquidez inmediata, aunque implica costos que pueden ser altos, esto si el plazo es largo, además existen comisiones adicionales. Al usar las formulas del descuento simple y compuesto, logramos observar cual era el valor presente y con esto, comparar el factoraje con otras alternativas de financiamiento y así tomar mejores decisiones.
+
+El factoraje beneficia en mayor parte a las empresas que venden a crédito, aunque depende de como se analizan los costos y las condiciones del contrato. Por lo que, el factoraje no es una opción rápida de financiamiento, sino una ayuda y estrategia, la cual si es ejecutada de la manera correcta, ayuda a un crecimiento empresarial.
+
+# Fuetes Consultadas
+
+(S/f). Yaydoo.com. Recuperado el 24 de septiembre de 2025, de https://yaydoo.com/blog/finanzas-empresariales/que-es-el-factoraje-financiero/
+
+Factoraje financiero. (s/f). Scribd. Recuperado el 24 de septiembre de 2025, de https://es.scribd.com/doc/144285182/FACTORAJE-FINANCIERO
+
+DocuSign. (2023). Factoraje financiero: qué es, ejemplos y todo lo que debes saber. Recuperado de https://www.docusign.com/es-mx/blog/factoraje-financiero
+
+Contafinanzas. (2023). El valor del dinero en el tiempo. Recuperado de https://contafinanzas.org/el-valor-del-dinero-en-el-tiempo/
+
+Invekta. (2023). Factoraje financiero: Qué es, características y ejemplos. Recuperado de https://www.invekta.com.mx/blog/factoraje-financiero-que-es-caracter %C3%ADsticas-y-ejemplos
+
+Lifeder. (2023). Valor del dinero en el tiempo: qué es, importancia, cálculo, ejemplos. Recuperado de https://www.lifeder.com/valor-del-dinero-tiempo/
+
+LógicaMat. (2023). Cálculo del tiempo en matemática financiera: fórmula y ejemplos. Recuperado de https://logicamat.com/calculo-del-tiempo-en-matematica-financiera-formula-y-ejemplos/
+
+Rankia México. (2023). Matemáticas financieras: definición, fórmulas y ejemplos aplicados a la inversión. Recuperado de https://www.rankia.mx/blog/como-comenzar-invertir-bolsa/6718287-matematicas-financieras-definicion-formulas-ejemplos-aplicados-inversion Ventajas y Desventajas:
